@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE = edge">
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+
+  <title>Paseo Gales</title>
+
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/fullcalendar.min.css">
+  <script src="assets\js\jquery-1.12.1.js"></script>
+  <script src="assets\js\lib\moment.min.js"></script>
+  <script src="assets\js\bootstrap.js"></script>
+  <script src="assets\js\script.js"></script>
+  <script src="assets\js\fullcalendar.min.js" charset="utf-8"></script>
+
+  <script type='text/javascript' src='assets\js\gcal.js'></script>'
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#calendar').fullCalendar({
+        googleCalendarApiKey: 'AIzaSyB7OAEtW50s59tQeBS2dqkXhXvJOTiPKMc',
+        color: 'yellow', // an option!
+        textColor: 'black', // an option!
+        events: {
+          googleCalendarId: 'rb15mb2d0q47g8bnc4lbmogbb8@group.calendar.google.com',
+          className: 'gcal-event'
+        }
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+  <header>
+    <nav id="indexNavBar" class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="row">
+          <div id="navContent" class="col-xs-12">
+            <!--Logo-->
+            <div class="navbar-header">
+              <img id="logoPG" class="logo" src="assets\\images\\Logo Paseo Gales Trans.png" alt="Logo Paseo Gales" width="100" />
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <!--Menu Items-->
+            <div class="collapse navbar-collapse" id="mainNavBar">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bod.html">Board of Directors</a></li>
+                <li><a href="photoGallery.html">Photo Gallery</a></li>
+                <!--Drop Down Menu-->
+                <li class="dropdown" id="dropDownMenu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Residents <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a target="blank" href="http://www.lexjuris.com/LEXLEX/lex58104.HTM">Horizontal Property Law</a></li>
+                    <li><a target="blank" href="assets\\images\\Reglamento Paseo Gales.pdf">Regulation</a></li>
+                    <li class="active"><a href="gazeboReservation.html">Gazebo Reservation</a></li>
+                    <li><a target="blank" href="assets\\images\\Guia Plan de Emergencia.pdf">Emergency Response Plan</a></li>
+                  </ul>
+                  <li><a href="contactUsForm.html">Contact Us</a></li>
+                </li>
+              </ul>
+            </div>
+            <!--Log In / Log Out-->
+            <ul class="nav navbar-nav navbar-right">
+              <li id="logIn"><a href="logIn.html">Log In</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row" id="eventTitle">
+        <div class="col-xs-12">
+          <h3>Events Calendar</h3>
+          <p>Have an event and want to use the gazebo? Check the calendar below and confirm that the date is available. If so, contact the Administrator to block your date.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12" "col-md-6" "col-md-offset-2">
+          <div id="calendar">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul>
+            <li>
+              <a target="blank" href="https://www.facebook.com"><img src="assets\\images\\fbIcon.png" alt="Facebook link" width="50"></a>
+            </li>
+            <li>
+              <a target="blank" href="https://www.github.com"><img src="assets\\images\\gitHubIcon.png" alt="GitHub link" width="60"></a>
+            </li>
+            <li>
+              <a href="#"><img class="logo" src="assets\\images\\RBK.png" alt="Rebecca's Logo" width="75"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

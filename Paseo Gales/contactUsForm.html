@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE = edge">
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+
+  <title>Paseo Gales</title>
+
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets\js\jquery-1.12.1.js"></script>
+  <script src="assets\js\bootstrap.js"></script>
+  <script src="assets\js\script.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <nav id="indexNavBar" class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="row">
+          <div id="navContent" class="col-xs-12">
+            <!--Logo-->
+            <div class="navbar-header">
+              <img id="logoPG" class="logo" src="assets\\images\\Logo Paseo Gales Trans.png" alt="Logo Paseo Gales" width="100" />
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <!--Menu Items-->
+            <div class="collapse navbar-collapse" id="mainNavBar">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bod.html">Board of Directors</a></li>
+                <li><a href="photoGallery.html">Photo Gallery</a></li>
+                <!--Drop Down Menu-->
+                <li class="dropdown" id="dropDownMenu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Residents <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a target="blank" href="http://www.lexjuris.com/LEXLEX/lex58104.HTM">Horizontal Property Law</a></li>
+                    <li><a target="blank" href="assets\\images\\Reglamento Paseo Gales.pdf">Regulation</a></li>
+                    <li><a href="gazeboReservation.html">Gazebo Reservation</a></li>
+                    <li><a target="blank" href="assets\\images\\Guia Plan de Emergencia.pdf">Emergency Response Plan</a></li>
+                  </ul>
+                  <li class="active"><a href="contactUsForm.html">Contact Us</a></li>
+                </li>
+              </ul>
+            </div>
+            <!--Log In / Log Out-->
+            <ul class="nav navbar-nav navbar-right">
+              <li id="logIn"><a href="logIn.html">Log In</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="ContactHead" class="contacts">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12" "col-md-6">
+            <h3>Contact Us</h3>
+            <p> For inquiries or suggestions, please feel free to contact us through one of the following methods or fill out the Contact Form below.</p>
+          </div>
+        </div>
+    </section>
+    <section id="ContactAddresses" class="contacts">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12" "col-md-6">
+            <h4>Contact Information</h4>
+            <label>Address</label>
+            <p>#500 Road 9189
+              <br> P.O. Box 100
+              <br> Gurabo, PR 00778-5178</p>
+            <label>Administration Office Telephone</label>
+            <p>787-555-5555</p>
+          </div>
+        </div>
+    </section>
+    <section id="ContactForm" class="contacts">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12" "col-md-6">
+            <h4>Contact Form</h4>
+            <form action="https://formspree.io/rebekaaguirre@yahoo.com" method="POST">
+              <span><label>Name</label>
+              <input type="text" name="name" placeholder="Your Name"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12" "col-md-6">
+            <span><label>Apartment Number</label>
+            <input type="text" name="apart" placeholder="Your Apart Number (if applicable)"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12" "col-md-6">
+            <span><label>Email</label>
+            <input type="email" name="_replyto" placeholder="Your Email"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12" "col-md-6">
+            <span><label>How can we assist you?</label>
+            <input type="text" name="inquiry" placeholder="Type Your Inquiry Here"></span>
+          </div>
+        </div>
+        <div class="row" id="submitButton">
+          <div class="col-xs-12" "col-md-6">
+            <input id="button" type="submit" value="Send">
+            </form>
+          </div>
+        </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul>
+            <li>
+              <a target="blank" href="https://www.facebook.com"><img src="assets\\images\\fbIcon.png" alt="Facebook link" width="50"></a>
+            </li>
+            <li>
+              <a target="blank" href="https://www.github.com"><img src="assets\\images\\gitHubIcon.png" alt="GitHub link" width="60"></a>
+            </li>
+            <li>
+              <a href="#"><img class="logo" src="assets\\images\\RBK.png" alt="Rebecca's Logo" width="75"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

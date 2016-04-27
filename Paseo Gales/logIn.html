@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE = edge">
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+
+  <title>Log In Page</title>
+
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets\js\jquery-1.12.1.js"></script>
+  <script src="assets\js\bootstrap.js"></script>
+  <script src="assets\js\script.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <!--Logo-->
+            <div class="navbar-header">
+              <img class="logo" src="assets\\images\\Logo Paseo Gales Trans.png" alt="Logo Paseo Gales" width="50" />
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <!--Menu Items-->
+            <div class="collapse navbar-collapse" id="mainNavBar">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bod.html">Board of Directors</a></li>
+                <li><a href="photoGallery.html">Photo Gallery</a></li>
+                <!--Drop Down Menu-->
+                <li class="dropdown" id="dropDownMenu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Residents <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a target="blank" href="http://www.lexjuris.com/LEXLEX/lex58104.HTM">Horizontal Property Law</a></li>
+                    <li><a target="blank" href="assets\\images\\Reglamento Paseo Gales.pdf">Regulation</a></li>
+                    <li><a href="gazeboReservation.html">Gazebo Reservation</a></li>
+                    <li><a target="blank" href="assets\\images\\Guia Plan de Emergencia.pdf">Emergency Response Plan</a></li>
+                  </ul>
+                  <li><a href="contactUsForm.html">Contact Us</a></li>
+                </li>
+              </ul>
+            </div>
+            <!--Log Out-->
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a target="blank" href="logIn.html">Log In</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="logIn">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>Residents Log In</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <form name="login">
+              <label>Username</label>
+              <input type="text" name="userid" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Password</label>
+            <input type="password" name="pswrd" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <input id="logIn" type="button" onclick="check(this.form)" value="Login" />
+            <input id="cancel" type="reset" value="Cancel" />
+          </div>
+        </div>
+        </form>
+
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul>
+            <li>
+              <a target="blank" href="https://www.facebook.com"><img src="assets\\images\\fbIcon.png" alt="Facebook link" width="50"></a>
+            </li>
+            <li>
+              <a target="blank" href="https://www.github.com"><img src="assets\\images\\gitHubIcon.png" alt="GitHub link" width="60"></a>
+            </li>
+            <li>
+              <a href="#"><img class="logo" src="assets\\images\\RBK.png" alt="Rebecca's Logo" width="75"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
